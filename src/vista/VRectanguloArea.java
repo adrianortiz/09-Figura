@@ -10,14 +10,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import modelo.Parametros;
+import modelo.Rectangulo;
 
 /**
  * 
  * @author Adrian
  *
  */
-public class VentanaRectangulo extends JFrame implements ActionListener {
+public class VRectanguloArea extends JFrame implements ActionListener {
 	
 	/**
 	 *  Clave
@@ -31,16 +31,20 @@ public class VentanaRectangulo extends JFrame implements ActionListener {
 	private JTextField txtlado2 = new JTextField();
 	private JButton btncalcular = new JButton("Calcular");
 	
-	Container c = getContentPane();
-	Parametros p = new Parametros();
+	private Container c = getContentPane();
+	Rectangulo recta = new Rectangulo();
 	
 	/**
 	 * Inicia la ventana y carga los controles por defecto
 	 */
-	public  VentanaRectangulo(){
-		setTitle("Rectangulo");
-		setSize(340,480);
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	public  VRectanguloArea(){
+		super.setTitle("Rectangulo Área");
+		super.setSize(340,480);
+		
+		super.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		super.setLocationRelativeTo(null);
+		super.setResizable(false);
+		
 		cargarControles();
 	}
 
@@ -71,9 +75,14 @@ public class VentanaRectangulo extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		if(e.getSource()==btncalcular){
-			int result = p.areaRectangulo(Integer.parseInt(txtlado1.getText()),Integer.parseInt(txtlado2.getText()));
-			lbResult.setText(String.format("%d", result));
+		if(e.getSource() == btncalcular) {
+			
+			double [] parameters = new double[2];
+			
+			parameters[0] = Double.parseDouble(txtlado1.getText());
+			parameters[1] = Double.parseDouble(txtlado2.getText());
+			
+			lbResult.setText(String.format("%f", recta.area(parameters)));
 		}
 		
 	}

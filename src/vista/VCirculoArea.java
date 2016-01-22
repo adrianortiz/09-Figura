@@ -9,37 +9,41 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import modelo.Parametros;
+import modelo.Circulo;
 
 /**
  * 
  * @author Adrian Ortiz
  *
  */
-public class VentanaCirculo extends JFrame implements ActionListener {
+public class VCirculoArea extends JFrame implements ActionListener {
 	
 	/**
 	 * Clave
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private JLabel lbDiametro = new JLabel("Diametro");
+	private JLabel lbDiametro = new JLabel("Radio");
 	private JLabel lbResult = new JLabel("Resultado");
 	private JTextField txtDiametro = new JTextField();
 	private JButton btnCalcular = new JButton("Calcular");
 
 	private Container c = getContentPane();
-	
-	Parametros p = new Parametros();
+	Circulo circulo = new Circulo();
 
 	/**
 	 * Inicia la ventana y carga los controles por defecto
 	 */
-	public VentanaCirculo() {
+	public VCirculoArea() {
 		
-		setTitle("Cuadrado");
-		setSize(340, 480);
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		super.setTitle("Círculo Área");
+		super.setSize(340, 480);
+		super.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		
+		super.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		super.setLocationRelativeTo(null);
+		super.setResizable(false);
+		
 		cargarControles();
 	}
 
@@ -73,8 +77,10 @@ public class VentanaCirculo extends JFrame implements ActionListener {
 		
 		if (e.getSource() == btnCalcular) {
 			
-			double result = p.areaCirculo(Integer.parseInt(txtDiametro.getText()));
-			lbResult.setText(String.format("%f", result));
+			double [] parameters = new double[1];
+			parameters[0] = Double.parseDouble(txtDiametro.getText());
+			
+			lbResult.setText(String.format("%f", circulo.area(parameters)));
 		
 		}
 	}

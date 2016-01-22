@@ -3,62 +3,62 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <package id="1" language="java" name="vista" project="09-Figura" file="/09-Figura/src/vista" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="52" width="115" x="206" y="305"/>    
+    <position height="52" width="115" x="223" y="200"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
   <class id="2" language="java" name="vista.Ventana" project="09-Figura" file="/09-Figura/src/vista/Ventana.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="227" width="215" x="962" y="305"/>    
+    <position height="371" width="215" x="1010" y="200"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="vista.VentanaCirculo" project="09-Figura" 
-    file="/09-Figura/src/vista/VentanaCirculo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="227" width="215" x="452" y="572"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="vista.VentanaRectangulo" project="09-Figura" 
-    file="/09-Figura/src/vista/VentanaRectangulo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="263" width="215" x="707" y="572"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <package id="5" language="java" name="modelo" project="09-Figura" file="/09-Figura/src/modelo" binary="false" 
+  <package id="3" language="java" name="modelo" project="09-Figura" file="/09-Figura/src/modelo" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="52" width="115" x="361" y="305"/>    
+    <position height="52" width="115" x="483" y="200"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <class id="6" language="java" name="vista.VentanaTriangulo" project="09-Figura" 
-    file="/09-Figura/src/vista/VentanaTriangulo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="299" width="215" x="962" y="572"/>    
+  <class id="4" language="java" name="vista.VRectanguloPerimetro" project="09-Figura" 
+    file="/09-Figura/src/vista/VRectanguloPerimetro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="215" x="117" y="611"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="modelo.Cuadrado" project="09-Figura" file="/09-Figura/src/modelo/Cuadrado.java" 
+  <class id="5" language="java" name="modelo.Cuadrado" project="09-Figura" file="/09-Figura/src/modelo/Cuadrado.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="119" width="171" x="1472" y="305"/>    
+    <position height="119" width="171" x="882" y="950"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="modelo.Parametros" project="09-Figura" 
-    file="/09-Figura/src/modelo/Parametros.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="155" width="172" x="835" y="911"/>    
+  <class id="6" language="java" name="modelo.Circulo" project="09-Figura" file="/09-Figura/src/modelo/Circulo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="171" x="1137" y="950"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="vista.VRectanguloArea" project="09-Figura" 
+    file="/09-Figura/src/vista/VRectanguloArea.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="215" x="372" y="611"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="vista.VCuadradoPerimetro" project="09-Figura" 
+    file="/09-Figura/src/vista/VCuadradoPerimetro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="227" width="215" x="627" y="611"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -67,115 +67,227 @@
   </class>  
   <interface id="9" language="java" name="modelo.Figuras" project="09-Figura" file="/09-Figura/src/modelo/Figuras.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="171" x="1472" y="572"/>    
+    <position height="101" width="171" x="1010" y="1109"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="10" language="java" name="vista.VentanaCuadrado" project="09-Figura" 
-    file="/09-Figura/src/vista/VentanaCuadrado.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="227" width="215" x="1217" y="572"/>    
+  <class id="10" language="java" name="vista.VTrianguloPerimetro" project="09-Figura" 
+    file="/09-Figura/src/vista/VTrianguloPerimetro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="299" width="215" x="1647" y="611"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="modelo.Triangulo" project="09-Figura" file="/09-Figura/src/modelo/Triangulo.java" 
+  <class id="11" language="java" name="vista.VCirculoPerimetro" project="09-Figura" 
+    file="/09-Figura/src/vista/VCirculoPerimetro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="227" width="215" x="1137" y="611"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="modelo.Triangulo" project="09-Figura" file="/09-Figura/src/modelo/Triangulo.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="83" width="98" x="516" y="305"/>    
+    <position height="119" width="171" x="1647" y="950"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="AppFigura" project="09-Figura" file="/09-Figura/src/AppFigura.java" 
+  <class id="13" language="java" name="vista.VCirculoArea" project="09-Figura" 
+    file="/09-Figura/src/vista/VCirculoArea.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="227" width="215" x="1392" y="611"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="vista.VCuadradoArea" project="09-Figura" 
+    file="/09-Figura/src/vista/VCuadradoArea.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="227" width="215" x="882" y="611"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="vista.VTrianguloArea" project="09-Figura" 
+    file="/09-Figura/src/vista/VTrianguloArea.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="215" x="1902" y="611"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="AppFigura" project="09-Figura" file="/09-Figura/src/AppFigura.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="125" x="654" y="305"/>    
+    <position height="101" width="125" x="742" y="200"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="modelo.Rectangulo" project="09-Figura" 
+  <class id="17" language="java" name="modelo.Rectangulo" project="09-Figura" 
     file="/09-Figura/src/modelo/Rectangulo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="83" width="103" x="819" y="305"/>    
+    <position height="119" width="171" x="372" y="950"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="14">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="15" name="vRectangulo"/>      
-      <multiplicity id="16" minimum="0" maximum="1"/>    
+  <realization id="18">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="19">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="20" name="cuadrado"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="17">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="18" name="p"/>      
-      <multiplicity id="19" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="20">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="21" name="vTriangulo"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
+  <association id="22">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="23" name="circulo"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="23">    
+  <association id="25">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="26" name="vTrianguloArea"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="29" name="vRectanguloPerimetro"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="32" name="vCirculoPerimetro"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="34">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="35">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="36" name="vRectanguloArea"/>      
+      <multiplicity id="37" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="38">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="24" name="p"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
+      <attribute id="39" name="recta"/>      
+      <multiplicity id="40" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="41">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="42">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="43" name="recta"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="45">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="46" name="trian"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="48">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="49" name="circulo"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="52" name="vCuadradoPerimetro"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="26">    
+  <association id="54">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="55" name="cuadrado"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="57">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="58" name="trian"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="60">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="27" name="vCuadrado"/>      
-      <multiplicity id="28" minimum="0" maximum="1"/>    
+      <attribute id="61" name="vTrianguloPerimetro"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="29">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="30" name="p"/>      
-      <multiplicity id="31" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="32">    
+  <association id="63">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="33" name="vCirculo"/>      
-      <multiplicity id="34" minimum="0" maximum="1"/>    
+      <attribute id="64" name="vCirculoArea"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="35">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="36" name="p"/>      
-      <multiplicity id="37" minimum="0" maximum="1"/>    
+  <association id="66">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="67" name="vCuadradoArea"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="38">    
-    <end type="SOURCE" refId="7"/>    
+  <realization id="69">    
+    <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="9"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

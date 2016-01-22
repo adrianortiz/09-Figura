@@ -10,14 +10,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import modelo.Parametros;
+import modelo.Cuadrado;
 
 /**
  * 
  * @author Adrian
  *
  */
-public class VentanaCuadrado extends JFrame implements ActionListener{
+public class VCuadradoArea extends JFrame implements ActionListener{
 	
 	/**
 	 * Clave
@@ -30,15 +30,18 @@ public class VentanaCuadrado extends JFrame implements ActionListener{
 	private JButton btnCalcular = new JButton("Calcular");
 	
 	Container c = getContentPane();
-	Parametros p = new Parametros();
+	Cuadrado cuadrado = new Cuadrado();
 
 	/**
 	 * Inicia la ventana y carga los controles por defecto
 	 */
-	public VentanaCuadrado() {
-		setTitle("Cuadrado");
-		setSize(340, 480);
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	public VCuadradoArea() {
+		super.setTitle("Cuadrado Área");
+		super.setSize(340, 480);
+		
+		super.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		super.setLocationRelativeTo(null);
+		super.setResizable(false);
 		cargarControles();
 	}
 
@@ -64,8 +67,11 @@ public class VentanaCuadrado extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == btnCalcular){
-			int result = p.areaCuadrado(Integer.parseInt(txtLado.getText()));
-			lbResult.setText(String.format("%d", result));
+			
+			double [] parameters = new double[1];
+			parameters[0] = Double.parseDouble(txtLado.getText());
+			
+			lbResult.setText(String.format("%f", cuadrado.area(parameters)));
 		}
 	}
 }

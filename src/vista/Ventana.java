@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 /**
  * 
@@ -18,24 +19,48 @@ public class Ventana extends JFrame implements ActionListener {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private JButton btnCuadro = new JButton("Cuadrado");
-	private JButton btnRectangulo = new JButton("Rectangulo");
-	private JButton btnTriangulo = new JButton("Triángulo");
-	private JButton btnCirculo = new JButton("Círculo");
+	private JLabel lbCuadro = new JLabel("Cuadrado: ");
+	private JButton btnCuadroArea = new JButton("Área");
+	private JButton btnCuadroPerimetro = new JButton("Perímetro");
+	
+	private JLabel lbRectangulo = new JLabel("Rectangulo: ");
+	private JButton btnRectanguloArea = new JButton("Área");
+	private JButton btnRectanguloPerimetro = new JButton("Perímetro");
+	
+	private JLabel lbTriangulo = new JLabel("Triángulo: ");
+	private JButton btnTrianguloArea = new JButton("Área");
+	private JButton btnTrianguloPerimetro = new JButton("Perímetro");
+	
+	private JLabel lbCirculo = new JLabel("Círculo: ");
+	private JButton btnCirculoArea = new JButton("Área");
+	private JButton btnCirculoPerimetro = new JButton("Perímetro");
 	
 	Container c = getContentPane();
 	
-	VentanaCirculo vCirculo = new VentanaCirculo();
-	VentanaCuadrado vCuadrado = new VentanaCuadrado();
-	VentanaRectangulo vRectangulo = new VentanaRectangulo();
-	VentanaTriangulo vTriangulo = new VentanaTriangulo();
+	VCuadradoArea vCuadradoArea = new VCuadradoArea();
+	VCuadradoPerimetro vCuadradoPerimetro = new VCuadradoPerimetro();
+	
+	VRectanguloArea vRectanguloArea = new VRectanguloArea();
+	VRectanguloPerimetro vRectanguloPerimetro = new VRectanguloPerimetro();
+	
+	VTrianguloArea vTrianguloArea = new VTrianguloArea();
+	VTrianguloPerimetro vTrianguloPerimetro = new VTrianguloPerimetro();
+	
+	VCirculoArea vCirculoArea = new VCirculoArea();
+	VCirculoPerimetro vCirculoPerimetro = new VCirculoPerimetro();
 	
 	/**
 	 * Inicia la ventana y carga los controles por defecto
 	 */
 	public Ventana() {
-		super.setTitle("Principal");
-		super.setSize(340, 480);
+		
+		super.setTitle("09-Figuras");
+		super.setSize(320, 400);
+		
+		super.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		super.setLocationRelativeTo(null);
+		super.setResizable(false);
+		
 		cargarControles();
 	}
 
@@ -44,20 +69,51 @@ public class Ventana extends JFrame implements ActionListener {
 	 */
 	private void cargarControles() {
 		c.setLayout(null);
-		btnCuadro.setBounds(10, 30, 300, 50);
-		btnRectangulo.setBounds(10, 130, 300, 50);
-		btnTriangulo.setBounds(10, 230, 300, 50);
-		btnCirculo.setBounds(10, 330, 300, 50);
+		
+		lbCuadro.setBounds(20, 10, 300, 50);
+		btnCuadroArea.setBounds(10, 50, 150, 30);
+		btnCuadroPerimetro.setBounds(160, 50, 150, 30);
+		
+		lbRectangulo.setBounds(20, 80, 300, 50);
+		btnRectanguloArea.setBounds(10, 120, 150, 30);
+		btnRectanguloPerimetro.setBounds(160, 120, 150, 30);
+		
+		lbTriangulo.setBounds(20, 150, 300, 50);
+		btnTrianguloArea.setBounds(10, 190, 150, 30);
+		btnTrianguloPerimetro.setBounds(160, 190, 150, 30);
+		
+		lbCirculo.setBounds(20, 230, 300, 50);
+		btnCirculoArea.setBounds(10, 270, 150, 30);
+		btnCirculoPerimetro.setBounds(160, 270, 150, 30);
 
-		c.add(btnCuadro);
-		c.add(btnRectangulo);
-		c.add(btnTriangulo);
-		c.add(btnCirculo);
+		c.add(lbCuadro);
+		c.add(btnCuadroArea);
+		c.add(btnCuadroPerimetro);
+		
+		c.add(lbRectangulo);
+		c.add(btnRectanguloArea);
+		c.add(btnRectanguloPerimetro);
+		
+		c.add(lbTriangulo);
+		c.add(btnTrianguloArea);
+		c.add(btnTrianguloPerimetro);
+		
+		c.add(lbCirculo);
+		c.add(btnCirculoArea);
+		c.add(btnCirculoPerimetro);
 
-		btnCuadro.addActionListener(this);
-		btnRectangulo.addActionListener(this);
-		btnTriangulo.addActionListener(this);
-		btnCirculo.addActionListener(this);
+
+		btnCuadroArea.addActionListener(this);
+		btnCuadroPerimetro.addActionListener(this);
+		
+		btnRectanguloArea.addActionListener(this);
+		btnRectanguloPerimetro.addActionListener(this);
+		
+		btnTrianguloArea.addActionListener(this);
+		btnTrianguloPerimetro.addActionListener(this);
+		
+		btnCirculoArea.addActionListener(this);
+		btnCirculoPerimetro.addActionListener(this);
 	}
 
 	/**
@@ -66,17 +122,29 @@ public class Ventana extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		if (e.getSource() == btnCuadro) {
-			vCuadrado.setVisible(true);
+		if (e.getSource() == btnCuadroArea) {
+			vCuadradoArea.setVisible(true);
 			
-		}else if (e.getSource()==btnRectangulo) {
-			vRectangulo.setVisible(true);
+		}else if (e.getSource() == btnCuadroPerimetro) {
+			vCuadradoPerimetro.setVisible(true);
 			
-		}else if (e.getSource()==btnTriangulo) {
-			vTriangulo.setVisible(true);
+		}else if (e.getSource() == btnRectanguloArea) {
+			vRectanguloArea.setVisible(true);
 			
-		}else if(e.getSource()==btnCirculo){
-			vCirculo.setVisible(true);
+		}else if (e.getSource() == btnRectanguloPerimetro) {
+			vRectanguloPerimetro.setVisible(true);
+			
+		}else if (e.getSource() == btnTrianguloArea) {
+			vTrianguloArea.setVisible(true);
+			
+		}else if (e.getSource() == btnTrianguloPerimetro) {
+			vTrianguloPerimetro.setVisible(true);
+			
+		}else if(e.getSource() == btnCirculoArea){
+			vCirculoArea.setVisible(true);
+			
+		}else if(e.getSource() == btnCirculoPerimetro){
+			vCirculoPerimetro.setVisible(true);
 		}
 		
 	}
